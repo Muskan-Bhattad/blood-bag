@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teacher</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+
+    <a href="home.html" class="logo">Smart<span>Study</span></a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="course.html">course</a>
+        <a href="teacher.html">teacher</a>
+        <a href="price.html">price</a>
+        <a href="review.html">review</a>
+        <a href="contact.html">contact</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+
+</header>
+
+<h1 class="heading"> Our teachers </h1>
+
+<!-- teacher section  -->
+
+<div class="container">
+    <div class="form-container">
+        <h1>Fill in the following details</h1>
+        <form id="deliveryForm">
+            <label for="bloodType">Blood Type:</label>
+            <select id="bloodType" required>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+                <option value="-O">-O</option>
+                <option value="-A">-A</option>
+                <option value="-AB">-AB</option>
+                <option value="-B">-B</option>
+            </select>
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" required>
+            <label for="bloodQuantity">Blood Quantity:</label>
+            <input type="number" id="bloodQuantity" required min="1" max="10">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="displayInfo" class="display-info hidden">
+        <h2>Delivery Information:</h2>
+        <p id="displayBloodType"></p>
+        <p id="displayPatientName"></p>
+        <p id="displayBloodQuantity"></p>
+    </div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
